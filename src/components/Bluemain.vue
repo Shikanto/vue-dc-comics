@@ -3,7 +3,7 @@
         <div class="container">
             <div class="blu-container">
                 <div class="card" v-for="(item, i) in blueItems" :key="i">
-                    <img :src="`../assets/${item.urlImg}`" :alt="item.alt">
+                    <img :src="require(`../assets/${item.urlImg}`)" :alt="item.alt">
                     <h4>{{item.text}}</h4>
                 </div>
                 
@@ -68,20 +68,20 @@
 
     .blu-container{
         display:flex;
-        justify-content:center;
+        justify-content:space-around;
         align-items:center;
         padding: ($padding-containers-y * 2) $padding-containers-x;
     }
 
     .card{
         display:flex;
-        justify-content:center;
         align-items:center;
-        font-size: 20px;
         img {
-            width:15%;
-            margin-right:20px;
-            margin-left:60px;
+            height:80px;
+            width:40%;
+            padding:0 $padding-containers-x;
+            
+            
         }
 
     }

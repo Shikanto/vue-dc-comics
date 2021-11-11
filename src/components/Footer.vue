@@ -51,7 +51,7 @@
               <h2>FOLLOW US</h2>
             </div>
             <div v-for="(icon, i) in listSocial" :key="i">
-              <img :src="`../assets/${icon.urlImg}`" alt="">
+              <img :src="require(`../assets/${icon.urlImg}`)" alt="">
             </div>
             <!-- <div>
               <img src="../assets/footer-facebook.png" alt="">
@@ -250,7 +250,7 @@ export default {
       img {
         width:50px;
         height:50px;
-        margin: 0 10px;
+        margin: 0 20px;
       }
     }
 

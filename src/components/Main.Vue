@@ -29,7 +29,7 @@ export default {
         background-color:black;
 
         .jumbotron{
-            padding: $padding-containers-y $padding-containers-x; 
+            padding: ($padding-containers-y * 2) $padding-containers-x; 
         }
     }
     h1{
