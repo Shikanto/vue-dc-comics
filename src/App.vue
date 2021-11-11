@@ -2,6 +2,7 @@
   <div id="app">
     <Header></Header>
     <Main></Main>
+    <Bluemain></Bluemain>
     <Footer></Footer>
   </div>
 </template>
@@ -10,6 +11,7 @@
 //qui importiamo i componenti
 import Header from "./components/Header.vue";
 import Main from "./components/Main.vue";
+import Bluemain from "./components/Bluemain.vue";
 import Footer from "./components/Footer.vue";
 
 export default {
@@ -17,6 +19,7 @@ export default {
   components: {
     Header,
     Main,
+    Bluemain,
     Footer
   },
 };
