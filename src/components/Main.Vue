@@ -1,19 +1,31 @@
 <template>
   <div class="div-main">
+    <div class="jumbotron">
+    </div>
     <div class="container">
-      <div class="jumbotron"></div>
+      <div class="series">
+        <h1>CURRENT SERIES</h1>
+      </div>
+      <CardComics/>
+      <div class="loadBtn"> 
+        <a >LOAD MORE</a>
+      </div>
     </div>
   </div>
 </template>
 
 <script>
-//import jsonData from "../assets/dc-comics.json";
+
+
+import CardComics from './CardComics.vue';
+
 
 export default {
   name: "Main",
-  /* data() {
-      dcList: jsonData;
-  } */
+  components: {
+    CardComics,
+  },
+  
 };
 </script>
 
@@ -22,18 +34,44 @@ export default {
 
 .div-main {
   background-color: $bg-dark;
-}
-
-.container {
-  margin: 0 auto;
-  width: $w-75;
-  background-color: black;
 
   .jumbotron {
     padding: ($padding-containers-y * 2) $padding-containers-x;
+    background-image: url("../assets/jumbotron.jpg");
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
-}
-h1 {
-  color: white;
+
+  .container {
+    margin: 0 auto;
+    width: $w-75;
+    position: relative;
+
+    .series{
+      background-color:$color-dc-blue;
+      color: white;
+      padding: 10px 30px;
+      display: inline-block;
+      position: absolute;
+      top: 0;
+      transform: translateY(-50%);
+      
+      
+    }
+  }
+
+  .loadBtn {
+
+    text-align: center;
+    padding: ($padding-containers-y * 2) $padding-containers-x;
+
+    a{
+    background-color: $color-dc-blue;
+    color: white;
+    padding: 10px 60px;
+    font-size:1.5rem;
+    }
+  }
 }
 </style>
