@@ -1,38 +1,39 @@
 <template>
-<main>
+  <div class="div-main">
     <div class="container">
-        <div class="jumbotron">
-            <h1>--> Content goes here -- </h1>
-        </div>
-        
+      <div class="jumbotron"></div>
     </div>
-</main>
+  </div>
 </template>
 
 <script>
+//import jsonData from "../assets/dc-comics.json";
 
 export default {
-  name:"Main"
-}
+  name: "Main",
+  /* data() {
+      dcList: jsonData;
+  } */
+};
 </script>
 
 <style lang="scss" scoped>
-    @import "../style/variables";
-    
-    main{
-        background-color:$bg-dark;
-    }
-    
-    .container{
-        margin: 0 auto;
-        width: $w-75;
-        background-color:black;
+@import "../style/variables";
 
-        .jumbotron{
-            padding: ($padding-containers-y * 2) $padding-containers-x; 
-        }
-    }
-    h1{
-        color:white
-    }
+.div-main {
+  background-color: $bg-dark;
+}
+
+.container {
+  margin: 0 auto;
+  width: $w-75;
+  background-color: black;
+
+  .jumbotron {
+    padding: ($padding-containers-y * 2) $padding-containers-x;
+  }
+}
+h1 {
+  color: white;
+}
 </style>

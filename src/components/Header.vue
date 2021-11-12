@@ -1,107 +1,104 @@
 <template>
-    <header class="container">
-        <div class="navbar">
-            <img src="../assets/dc-logo.png" alt="DC logo"> 
-            <div class="nav-links">
-                <ul>
-                  <li v-for="(item, i) in navbarItems" :key="i">
-                    <a :href="item.href">{{item.title}}</a>
-                  </li>
-                </ul>
-            </div>
-        </div>
-    </header>
+  <header class="container">
+    <div class="navbar">
+      <img src="../assets/dc-logo.png" alt="DC logo" />
+      <div class="nav-links">
+        <ul>
+          <li v-for="(item, i) in navbarItems" :key="i">
+            <a :href="item.href">{{ item.title }}</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
 </template>
 
 <script>
-
 export default {
-  name:"Header",
+  name: "Header",
   data() {
     return {
       navbarItems: [
         {
           title: "CHARACTERS",
-          href:"#",
+          href: "#",
         },
         {
           title: "COMICS",
-          href:"#",
+          href: "#",
         },
         {
           title: "MOVIES",
-          href:"#",
+          href: "#",
         },
         {
           title: "TV",
-          href:"#",
+          href: "#",
         },
         {
           title: "GAMES",
-          href:"#",
+          href: "#",
         },
         {
           title: "CHARACTERS",
-          href:"#",
+          href: "#",
         },
         {
           title: "COLLECTIBLES",
-          href:"#",
+          href: "#",
         },
         {
           title: "VIDEOS",
-          href:"#",
+          href: "#",
         },
         {
           title: "FANS",
-          href:"#",
+          href: "#",
         },
         {
           title: "NEWS",
-          href:"#",
+          href: "#",
         },
         {
           title: "SHOP",
-          href:"#",
-        },      
+          href: "#",
+        },
       ],
     };
-  }
-}
+  },
+};
 </script>
 
 <style lang="scss" scoped>
-
 @import "../style/variables";
-    .container{
-        margin: 0 auto;
-        width: $w-75;
-    }
+.container {
+  margin: 0 auto;
+  width: $w-75;
+}
 
-    .nav-links{
-      display:flex;
-      justify-content: center;
-      align-items:center;
+.nav-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-    }
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: $padding-containers-y $padding-containers-x;
 
-    .navbar{
-      display:flex;
-      justify-content: space-between;
-      padding: $padding-containers-y $padding-containers-x;
-      
-      ul{
-        display:flex;
-        justify-content: center;
-        list-style-type: none;
-        
-        li a{
-          padding: 10px 20px;
-          text-decoration: none;
-          font-weight:bold;
-          display:inline-block;
-          color:black;
-        }
-      }
+  ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+
+    li a {
+      padding: 10px 20px;
+      text-decoration: none;
+      font-weight: bold;
+      display: inline-block;
+      color: black;
     }
+  }
+}
 </style>

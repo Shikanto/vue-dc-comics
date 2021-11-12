@@ -20,7 +20,7 @@ export default {
     Header,
     Main,
     Bluemain,
-    Footer
+    Footer,
   },
 };
 </script>
