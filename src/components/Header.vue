@@ -81,12 +81,14 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
+  font-size:0.8rem;
 }
 
 .navbar {
   display: flex;
   justify-content: space-between;
   padding: $padding-containers-y $padding-containers-x;
+  padding-right: 0;
 
   ul {
     display: flex;

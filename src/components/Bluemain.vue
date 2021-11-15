@@ -72,11 +72,22 @@ export default {
 .card {
   display: flex;
   align-items: center;
+  
   img {
     
     width: 100px;
     height: 85px;
     padding: 0 $padding-containers-x;
   }
+
+  
+
+  h4{
+    font-size: 0.9rem;
+  }
 }
+
+.card:last-of-type img{
+    width: 120px;
+  }
 </style>
