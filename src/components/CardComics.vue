@@ -44,13 +44,17 @@ export default {
   display: flex;
   flex-wrap: wrap;
   gap: $gap-comics;
-  padding-top: 60px;
+  padding: 60px 30px 0;
+  
   .card-comics {
     flex-basis: calc(100% / 6 - $gap-comics);
+    
 
     img {
       width: 100%;
       object-fit: cover;
+      object-position:top;
+      height: 55%;
     }
   }
 }
@@ -58,5 +62,6 @@ export default {
 h4 {
   color: white;
   font-size:20px;
+  margin-top:20px;
 }
 </style>

@@ -88,7 +88,7 @@ export default {
   display: flex;
   justify-content: space-between;
   padding: $padding-containers-y $padding-containers-x;
-  padding-right: 0;
+
 
   ul {
     display: flex;

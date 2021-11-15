@@ -64,7 +64,7 @@ export default {
   .loadBtn {
 
     text-align: center;
-    padding: ($padding-containers-y * 2) $padding-containers-x;
+    padding-bottom: $padding-containers-y;
 
     a{
     background-color: $color-dc-blue;
