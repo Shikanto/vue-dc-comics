@@ -2,10 +2,10 @@
   <header class="container">
     <div class="navbar">
       <img src="../assets/dc-logo.png" alt="DC logo" />
-      <div class="nav-links">
+      <div class="nav-links" >
         <ul>
           <li v-for="(item, i) in navbarItems" :key="i">
-            <a :href="item.href">{{ item.title }}</a>
+            <a :class="currentIndex === i ? 'active' : '' " :href="item.href">{{ item.title }}</a>
           </li>
         </ul>
       </div>
@@ -18,6 +18,7 @@ export default {
   name: "Header",
   data() {
     return {
+      currentIndex: 1,
       navbarItems: [
         {
           title: "CHARACTERS",
@@ -99,6 +100,11 @@ export default {
       display: inline-block;
       color: black;
     }
+    .active{
+    color: $color-dc-blue;
+    border-bottom: 3px solid $color-dc-blue;  
+    }
   }
 }
+
 </style>
